@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "80a7e925-e3e4-4ab6-b8e5-70ffd611f5a3",
+		"name": "SithecCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24047132"
+	},
+	"item": [
+		{
+			"name": "HumanAPIs",
+			"item": [
+				{
+					"name": "GetMockHumans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44329/api/Human/GetMockHumans",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"GetMockHumans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllHumans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44329/api/Human/GetAllHumans",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"GetAllHumans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetHumanById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44329/api/Human/GetHumanById?id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"GetHumanById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewHuman",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"id\": 3,\r\n        \"name\": \"Rayner\",\r\n        \"sex\": \"Male\",\r\n        \"age\": 15,\r\n        \"height\": 182,\r\n        \"weight\": 50\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Human/NewHuman",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"NewHuman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"id\": 3,\r\n        \"name\": \"Rayner\",\r\n        \"sex\": \"Male\",\r\n        \"age\": 15,\r\n        \"height\": 180,\r\n        \"weight\": 50\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Human/UpdateHuman",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"UpdateHuman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteHuman",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44329/api/Human/DeleteHuman?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Human",
+								"DeleteHuman"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OperationAPIs",
+			"item": [
+				{
+					"name": "OperationWithHeaders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44329/api/Operation/OperationWithHeaders?valueX=5&operation=substraction&valueY=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Operation",
+								"OperationWithHeaders"
+							],
+							"query": [
+								{
+									"key": "valueX",
+									"value": "5"
+								},
+								{
+									"key": "operation",
+									"value": "substraction",
+									"description": "addition/substraction/multiplication/division"
+								},
+								{
+									"key": "valueY",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OperationWithJSON",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valueX\": 5,\r\n    \"operation\": \"addition\", \r\n    \"valueY\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Operation/OperationWithJSON",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Operation",
+								"OperationWithJSON"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
