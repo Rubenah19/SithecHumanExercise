@@ -13,3 +13,5 @@ I used a SQL database for the project that you will need to implement to run the
 Tell me if you have any questions about it.
 
 Regards!
+
+NOTE: Remember verify the MySQLConnection of the database in the appsettings.json from the project.
